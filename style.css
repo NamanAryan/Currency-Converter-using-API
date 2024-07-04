@@ -15,8 +15,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #ed9b40;
-
+    background-image: linear-gradient(to bottom right, #fc9e4f, #edd382);
 }
 
 .box{
