@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ed9b40;
+
+}
+
+.box{
+    padding: 15px;
+    height: 25rem;
+    width: 25rem;
+    background-color: #FFEEDB;
+    border-radius: 10px;
+}
+
+form button{
+    font-weight: 600;
+    background-color: #ba3b46;
+    color: #ffeedb;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border: 2px transparent;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 10px 50px 10px;                                                         
+}
+
+button:hover{
+    opacity: 90%;
+    cursor: pointer;
+
+}
+
+form select{
+    border: none;
+    background-color: #FFEEDB;
+}
+
+.select-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px transparent;
+}
+
+i{
+    margin-top: 1.6rem;
+    font-size: 1.3rem;
+
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+h2{
+    margin: 5px 0px 15px 0px
+}
+
+form input{
+    width: 100%;
+    font-size: 1rem;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+#amtText{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#selectText{
+
+    font-size: 0.9rem;
+    margin: 7px
+}
+
+
