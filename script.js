@@ -48,7 +48,7 @@ btn.addEventListener("click", async(evt) =>{
         console.log(rate)
         let finalAmount = amtVal * rate;
         console.log(`Converted amount: ${finalAmount}`);
-        msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+        msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${toCurr.value}`;
     });  
 })
 
