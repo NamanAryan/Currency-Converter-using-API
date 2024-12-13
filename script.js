@@ -1,5 +1,4 @@
-const base_url = "https://api.exchangeratesapi.io/v1/latest";
-const access_key = "979f4c65c28da44b01bf91f4";
+const base_url = "https://v6.exchangerate-api.com/v6/979f4c65c28da44b01bf91f4/latest";
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
 const msg = document.querySelector(".msg");
@@ -44,14 +43,17 @@ btn.addEventListener("click", async (evt) => {
     const fromCurr = document.querySelector(".from select").value;
     const toCurr = document.querySelector(".to select").value;
 
-    const URL = `${base_url}?access_key=${access_key}&format=1`;
+    // Construct the URL dynamically
+    const URL = `${base_url}/${fromCurr}`;
     try {
         let response = await fetch(URL);
         if (!response.ok) throw new Error("Failed to fetch exchange rates");
 
         let result = await response.json();
         console.log(result); // Log the full response for debugging
-        let rate = result.rates[toCurr] / result.rates[fromCurr];
+
+        // Use the `conversion_rates` object to get the target rate
+        let rate = result.conversion_rates[toCurr];
         let finalAmount = amtVal * rate;
 
         msg.innerText = `${amtVal} ${fromCurr} = ${finalAmount.toFixed(2)} ${toCurr}`;
