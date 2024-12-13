@@ -1,4 +1,4 @@
-const base_url = "http://api.exchangeratesapi.io/v1/latest";
+const base_url = "https://api.exchangeratesapi.io/v1/latest";
 const access_key = "a8b0492eb7b2f39d838d4c1c341f5646";
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
