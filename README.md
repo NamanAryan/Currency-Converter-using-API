@@ -1,1 +1,1 @@
-https://moneyconvertapi.netlify.app/
+https://money-converter-using-api.netlify.app
