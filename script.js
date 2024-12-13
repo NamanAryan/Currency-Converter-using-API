@@ -1,5 +1,5 @@
 const base_url = "https://api.exchangeratesapi.io/v1/latest";
-const access_key = "a8b0492eb7b2f39d838d4c1c341f5646";
+const access_key = "979f4c65c28da44b01bf91f4";
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
 const msg = document.querySelector(".msg");
